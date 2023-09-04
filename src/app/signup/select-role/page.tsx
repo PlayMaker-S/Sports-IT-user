@@ -6,6 +6,7 @@ import { RoleAtomType } from "@/interfaces/roleInterface";
 import { useRecoilState } from "recoil";
 import { PageLayout } from "@/components/layout/PageLayout";
 import NavBar from "@/components/navbar/NavBar";
+import Link from "next/link";
 
 const SelectRolePage = () => {
   const [role, setRole] = useRecoilState<RoleAtomType>(roleAtom);
@@ -40,7 +41,9 @@ const SelectRolePage = () => {
           </S.SportyButton>
         </S.SelectArea>
       </PageLayout>
-      <NavBar navText="다음" active={true} />
+      <Link href="/signup/profile">
+        <NavBar navText="다음" active={true} />
+      </Link>
     </>
   );
 };
