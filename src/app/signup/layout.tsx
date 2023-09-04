@@ -10,7 +10,6 @@ const SignupLayout = ({ children }: { children: React.ReactNode }) => {
     <S.SignupContainer>
       <GoBackHeader />
       {children}
-      <NavBar active={true} navText="다음" />
     </S.SignupContainer>
   );
 };

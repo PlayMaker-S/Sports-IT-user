@@ -2,15 +2,13 @@
 import React from "react";
 import * as S from "../../styles/signup/page.style";
 import NavBar from "@/components/navbar/NavBar";
+import { PageLayout } from "@/components/layout/PageLayout";
 
 const SignupPage = () => {
   return (
     <>
-      {/* <Seo title="회원가입" />
-      <GoBackHeader title="회원가입" /> */}
-
-      <S.Form>
-        <S.InputArea>
+      <PageLayout>
+        <S.Form>
           <S.Input>
             <S.InputTitle>이름</S.InputTitle>
             <S.InputContent placeholder="이름 입력"></S.InputContent>
@@ -75,9 +73,9 @@ const SignupPage = () => {
               type="password"
             ></S.InputContent>
           </S.Input>
-        </S.InputArea>
-        {/* <NavBar navText="다음" /> */}
-      </S.Form>
+          {/* <NavBar navText="다음" /> */}
+        </S.Form>
+      </PageLayout>
       <NavBar active={true} navText="다음" />
     </>
   );

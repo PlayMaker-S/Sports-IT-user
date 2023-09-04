@@ -26,7 +26,7 @@ const LoginPage = () => {
         <div style={{ textDecoration: "underline" }}>구글 로그인</div>
       </S.Form>
       <S.AccountPanel>
-        <Link href="/auth/role-select">
+        <Link href="/signup">
           <S.AccountPanelText>회원가입</S.AccountPanelText>
         </Link>
         <Link href="/auth/findinfo">
